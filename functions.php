@@ -68,16 +68,17 @@ function sortOrder ($current, $order_by, $sort_order) {
 }
 
 function getOrder ($current,$order_by, $sort_order) {
+	$params = 'order_by='.$current.'&sort_order=';
 	if (!$sort_order) {
-		return "asc";
+		return $params."asc";
 	}
 	if ($current == $order_by) {
 		if($sort_order=="asc"){
-			return "desc";
+			return $params."desc";
 		} else {
-			return "asc";
+			return $params."asc";
 		}
 	}else{
-		return "asc";
+		return $params."asc";
 	}
 }
