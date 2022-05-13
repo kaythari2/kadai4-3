@@ -37,7 +37,6 @@ if (isset($_GET["search"]) && (!empty($_GET['keyword']) || !empty($_GET['frame_n
 } else {
 	$tCars = $dbController->getAllTCars($index, $limit);
 }
-var_dump($totalRowCount);
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
